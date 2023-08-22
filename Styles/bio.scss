@@ -94,7 +94,8 @@ body {
       &:hover,
       &:active {
         color: white;
-        text-decoration-thickness: 2px;
+        border-bottom: 2px solid white;
+        font-weight: 600;
       }
 
       @include tablet {

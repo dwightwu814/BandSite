@@ -73,7 +73,8 @@ body {
 }
 .nav__menu-item:hover, .nav__menu-item:active {
   color: white;
-  text-decoration-thickness: 2px;
+  border-bottom: 2px solid white;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .nav__menu-item {
