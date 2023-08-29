@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/bio.css">
-    <title>Travel Site</title>
+    <title>Band Site</title>
 
 
 
@@ -23,7 +23,7 @@
             <a class="nav__menu-item nav__menu-item-underline">
                 Biography
             </a>
-            <a class="nav__menu-item">
+            <a class="nav__menu-item" href="./Pages/shows.html">
                 Shows
             </a>
         </div>
@@ -100,6 +100,119 @@
         </div>
     </section>
 
+
+    <section class="comment">
+        <div class="comment__heading">
+            Join the Conversation
+        </div>
+        <div class="comment__main">
+            <div class="comment__photo">
+                <img src=" Assets/Images/Mohan-muruge.jpg">
+            </div>
+
+            <div class="comment__area">
+
+                <div class="comment__box">
+                    <div class="comment__subheading">
+                        NAME </div>
+                    <input type="text" name="user" id="userNameInput" class="comment__box-name"
+                        placeholder="Enter your name" />
+                </div>
+
+                <div class="comment__box">
+                    <div class="comment__subheading">
+                        COMMENT
+                    </div>
+                    <textarea type="text" id="userCommentInput"
+                        class="comment__box-comment">Add a new comment</textarea>
+                </div>
+
+                <button class="comment__button" type="button" id="button"> Submit
+                </button>
+            </div>
+        </div>
+
+        <div class="comment__main comment__posts" id="commentMainContainer">
+
+            <div class="comment__item" id="commentContainer">
+                <div class="comment__item-photo"></div>
+
+                <div class="comment__textarea">
+                    <div class="comment__item-nameandtimestamp">
+                        <div class="comment__item-heading">
+                            Connor Walton
+                        </div>
+
+                        <div class="comment__item-date">
+                            02/17/2021
+                        </div>
+                    </div>
+
+                    <div class="comment__item-content">
+                        This is art. This is inexplicable magic expressed in the purest way, everything that makes up
+                        this
+                        majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment__item" id="commentContainer">
+                <div class="comment__item-photo"></div>
+
+                <div class="comment__textarea">
+                    <div class="comment__item-nameandtimestamp">
+                        <div class="comment__item-heading">
+                            Connor Walton
+                        </div>
+
+                        <div class="comment__item-date">
+                            02/17/2021
+                        </div>
+                    </div>
+
+                    <div class="comment__item-content">
+                        This is art. This is inexplicable magic expressed in the purest way, everything that makes up
+                        this
+                        majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment__item" id="commentContainer">
+                <div class="comment__item-photo"></div>
+
+                <div class="comment__textarea">
+                    <div class="comment__item-nameandtimestamp">
+                        <div class="comment__item-heading">
+                            Connor Walton
+                        </div>
+
+                        <div class="comment__item-date">
+                            02/17/2021
+                        </div>
+                    </div>
+
+                    <div class="comment__item-content">
+                        This is art. This is inexplicable magic expressed in the purest way, everything that makes
+                        up
+                        this
+                        majestic work deserves reverence. Let us appreciate this for what it is and what it
+                        contains.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+
+
+
+    </section>
+
+
+
+
     <footer class="footer">
         <section class="footer__socialmedia">
             <h3>Get in Touch</h3>
@@ -161,6 +274,9 @@
         <div class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved
         </div>
     </footer>
+
+
+    <script type="module" src="Scripts/index-page.js"></script>
 
 </body>
 

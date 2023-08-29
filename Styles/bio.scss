@@ -2,6 +2,7 @@ $BandSite-Black: #323232;
 $font-stack: Avenir Next, san-serif;
 $Mercury: #E1E1E1;
 $Alabaster: #FAFAFA;
+$Silver: #AFAFAF;
 
 @mixin font-style ($weight, $size) {
   font-weight: $weight;
@@ -243,6 +244,122 @@ body {
   }
 
 }
+
+.comment {
+  padding: 24px 16px;
+
+  &__main {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-direction: row;
+  }
+
+  &__heading {
+    @include font-style(700, 24px);
+    padding-bottom: 16px;
+  }
+
+  &__subheading {
+    @include font-style(500, 11px);
+    color: $Silver;
+    padding-bottom: 0.5EM;
+  }
+
+
+  &__area {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+  }
+
+  &__box,
+  &__button {
+    width: 100%;
+
+    &-name {
+      width: 100%;
+      height: 2rem;
+    }
+
+    &-comment {
+      width: 100%;
+      height: 8rem;
+    }
+
+  }
+
+  &__button {
+    height: 3rem;
+  }
+
+  &__photo {
+    width: 3rem;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+  }
+
+
+
+
+}
+
+.comment__posts {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 24px;
+}
+
+.comment__box-comment::placeholder {
+  height: 32px;
+}
+
+
+.comment__item {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $Mercury;
+  border-top: 1px solid $Mercury;
+
+}
+
+.comment__item-photo {
+  width: 3rem;
+  height: 3rem;
+  background-color: $Mercury;
+  border-radius: 50%;
+}
+
+.comment__textarea {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.comment__item-nameandtimestamp {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.comment__item-content {
+  padding-top: 8px;
+}
+
+
 
 .gallery {
   width: 100%;
