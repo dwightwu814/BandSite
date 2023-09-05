@@ -1,283 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/bio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Styles/bio.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Band Site</title>
+  </head>
 
-
-
-
-</head>
-
-<body>
+  <body>
     <div class="nav">
-        <div class="nav__logo">
-            <img src="../Assets/Logo/Logo-bandsite.svg">
-        </div>
+      <div class="nav__logo">
+        <img src="../Assets/Logo/Logo-bandsite.svg" />
+      </div>
 
-        <div class="nav__menu">
-            <a class="nav__menu-item nav__menu-item-underline">
-                Biography
-            </a>
-            <a class="nav__menu-item" href="./Pages/shows.html">
-                Shows
-            </a>
-        </div>
-
+      <div class="nav__menu">
+        <a class="nav__menu-item nav__menu-item-underline"> Biography </a>
+        <a class="nav__menu-item" href="./Pages/shows.html"> Shows </a>
+      </div>
     </div>
 
-
     <header class="header">
-        <div class="header__text">
-            The Bees Knees
-        </div>
+      <div class="header__text">The Bees Knees</div>
     </header>
 
-
     <main class="main">
+      <h2 class="main__heading">About the Musicians</h2>
 
-        <h2 class="main__heading">About the Musicians </h2>
+      <img class="main__image" src="../Assets/Images/band.jpg" />
 
-        <img class="main__image" src="../Assets/Images/band.jpg">
+      <p class="main__quote">
+        “We push each other to be the best. It’s not uncommon for one of us to
+        say ‘this needs to be better, back to the drawing board’”
+      </p>
 
-        <p class="main__quote">“We push each other to be the best. It’s not uncommon for one of us to say ‘this needs to
-            be better, back to the drawing board’”
-        </p>
+      <p class="main__quote-author">
+        - Bryan Teddy, lead vocalist of The Bees Knees
+      </p>
 
-        <p class="main__quote-author"> - Bryan Teddy, lead vocalist of The Bees Knees
-        </p>
+      <section class="main__section">
+        <h3 class="main__section-header">The Bees Knees</h3>
+        <div class="main__section-paragraph">
+          <p>
+            The Bees Knees is a pop rock band originating from San Francisco,
+            California. The band consists of lead vocalist Bryan Teddy,
+            guitarist Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee
+            and drummer Freddie Fischer. The band achieved its first commercial
+            success as an unsigned act, drawing attention from manager Cam
+            Adams. Having worked with other popular acts (The Elephant In The
+            Room, One Trick Pony, The Cat’s Meow), Adams was confident the band
+            could succeed even further, pushing them to sign with Magenta
+            Records.
+          </p>
 
-
-        <section class="main__section">
-            <h3 class="main__section-header">The Bees Knees
-            </h3>
-            <div class="main__section-paragraph">
-                <p>The Bees Knees is a pop rock band originating from San Francisco,
-                    California. The band consists of lead vocalist Bryan Teddy, guitarist Mack Tolkens, guitarist Andrew
-                    Green, bassist Kent Zulkee and drummer Freddie Fischer. The band achieved its first commercial
-                    success
-                    as an unsigned act, drawing attention from manager Cam Adams. Having worked with other popular acts
-                    (The
-                    Elephant In The Room, One Trick Pony, The Cat’s Meow), Adams was confident the band could succeed
-                    even
-                    further, pushing them to sign with Magenta Records.
-                </p>
-
-                <p>From there, the band has soared, gaining international recognition and
-                    ranking in the top 10 on the Poster Charts. New fans immediately fell in love with the band’s
-                    original
-                    and organic attitude, solidifying their place as one of the hottest and fastest up and coming acts
-                    of
-                    this century. Fans affectionately refer to themselves as “The Hive” and are drawn to their candid
-                    and
-                    authentic performances on stage. Looking forward to touring in the future, The Bees Knees are
-                    currently
-                    recording their second studio album, looking to be released in late 2021.
-                </p>
-            </div>
-        </section>
-
-
+          <p>
+            From there, the band has soared, gaining international recognition
+            and ranking in the top 10 on the Poster Charts. New fans immediately
+            fell in love with the band’s original and organic attitude,
+            solidifying their place as one of the hottest and fastest up and
+            coming acts of this century. Fans affectionately refer to themselves
+            as “The Hive” and are drawn to their candid and authentic
+            performances on stage. Looking forward to touring in the future, The
+            Bees Knees are currently recording their second studio album,
+            looking to be released in late 2021.
+          </p>
+        </div>
+      </section>
     </main>
 
     <section class="gallery">
-        <h2 class="gallery__title">Photo Gallery </h2>
-        <div class="gallery__gallery">
-            <img src="Assets/Images/Photo-gallery-1.jpg">
-            <img src="Assets/Images/Photo-gallery-2.jpg">
-            <img src="Assets/Images/Photo-gallery-3.jpg">
-            <img src="Assets/Images/Photo-gallery-4.jpg">
-            <img src="Assets/Images/Photo-gallery-5.jpg">
-            <img src="Assets/Images/Photo-gallery-6.jpg">
-            <img src="Assets/Images/Photo-gallery-7.jpg">
-            <img src="Assets/Images/Photo-gallery-8.jpg">
-            <img src="Assets/Images/Photo-gallery-9.jpg">
-
-        </div>
+      <h2 class="gallery__title">Photo Gallery</h2>
+      <div class="gallery__gallery">
+        <img src="Assets/Images/Photo-gallery-1.jpg" />
+        <img src="Assets/Images/Photo-gallery-2.jpg" />
+        <img src="Assets/Images/Photo-gallery-3.jpg" />
+        <img src="Assets/Images/Photo-gallery-4.jpg" />
+        <img src="Assets/Images/Photo-gallery-5.jpg" />
+        <img src="Assets/Images/Photo-gallery-6.jpg" />
+        <img src="Assets/Images/Photo-gallery-7.jpg" />
+        <img src="Assets/Images/Photo-gallery-8.jpg" />
+        <img src="Assets/Images/Photo-gallery-9.jpg" />
+      </div>
     </section>
-
 
     <section class="comment">
-        <div class="comment__heading">
-            Join the Conversation
-        </div>
-        <div class="comment__main">
-            <div class="comment__photo">
-                <img src=" Assets/Images/Mohan-muruge.jpg">
-            </div>
+      <div class="comment__heading">Join the Conversation</div>
 
-            <div class="comment__area">
-
-                <div class="comment__box">
-                    <div class="comment__subheading">
-                        NAME </div>
-                    <input type="text" name="user" id="userNameInput" class="comment__box-name"
-                        placeholder="Enter your name" />
-                </div>
-
-                <div class="comment__box">
-                    <div class="comment__subheading">
-                        COMMENT
-                    </div>
-                    <textarea type="text" id="userCommentInput"
-                        class="comment__box-comment">Add a new comment</textarea>
-                </div>
-
-                <button class="comment__button" type="button" id="button"> Submit
-                </button>
-            </div>
+      <div class="comment__main">
+        <div class="comment__photo">
+          <img src=" Assets/Images/Mohan-muruge.jpg" />
         </div>
 
-        <div class="comment__main comment__posts" id="commentMainContainer">
+        <div class="comment__area">
+          <form class="comment__box">
+            <div class="comment__subheading">NAME</div>
+            <input
+              type="text"
+              name="user"
+              id="userNameInput"
+              class="comment__box-name"
+              placeholder="Enter your name"
+            />
+          </form>
 
-            <div class="comment__item" id="commentContainer">
-                <div class="comment__item-photo"></div>
+          <div class="comment__box">
+            <div class="comment__subheading">COMMENT</div>
+            <textarea
+              type="text"
+              id="userCommentInput"
+              class="comment__box-comment"
+              placeholder="Add a new comment"
+            ></textarea>
+          </div>
 
-                <div class="comment__textarea">
-                    <div class="comment__item-nameandtimestamp">
-                        <div class="comment__item-heading">
-                            Connor Walton
-                        </div>
-
-                        <div class="comment__item-date">
-                            02/17/2021
-                        </div>
-                    </div>
-
-                    <div class="comment__item-content">
-                        This is art. This is inexplicable magic expressed in the purest way, everything that makes up
-                        this
-                        majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment__item" id="commentContainer">
-                <div class="comment__item-photo"></div>
-
-                <div class="comment__textarea">
-                    <div class="comment__item-nameandtimestamp">
-                        <div class="comment__item-heading">
-                            Connor Walton
-                        </div>
-
-                        <div class="comment__item-date">
-                            02/17/2021
-                        </div>
-                    </div>
-
-                    <div class="comment__item-content">
-                        This is art. This is inexplicable magic expressed in the purest way, everything that makes up
-                        this
-                        majestic work deserves reverence. Let us appreciate this for what it is and what it contains.
-                    </div>
-                </div>
-            </div>
-
-            <div class="comment__item" id="commentContainer">
-                <div class="comment__item-photo"></div>
-
-                <div class="comment__textarea">
-                    <div class="comment__item-nameandtimestamp">
-                        <div class="comment__item-heading">
-                            Connor Walton
-                        </div>
-
-                        <div class="comment__item-date">
-                            02/17/2021
-                        </div>
-                    </div>
-
-                    <div class="comment__item-content">
-                        This is art. This is inexplicable magic expressed in the purest way, everything that makes
-                        up
-                        this
-                        majestic work deserves reverence. Let us appreciate this for what it is and what it
-                        contains.
-                    </div>
-                </div>
-            </div>
-
+          <button class="comment__button" type="button" id="button">
+            Submit
+          </button>
         </div>
-        </div>
+      </div>
 
-
-
-
+      <div class="comment__main comment__posts" id="commentMainContainer"></div>
     </section>
 
-
-
-
     <footer class="footer">
-        <section class="footer__socialmedia">
-            <h3>Get in Touch</h3>
-            <div class="footer__socialmedia-icons">
-                <img src="Assets/Icons/SVG/Icon-instagram.svg">
-                <img src="Assets/Icons/SVG/Icon-facebook.svg">
-                <img src="Assets/Icons/SVG/Icon-twitter.svg">
-            </div>
-            <div class="footer__socialmedia-logo">
-                <img src="Assets/Logo/Logo-bandsite.svg">
-            </div>
-
-        </section>
-
-        <section class="footer__contacts">
-            <div class="footer__contact">
-                <div class="footer__contact-name">
-                    Cam Adams <br /> The Bees Knees Management </div>
-
-                <div class="footer__contact-address">
-                    503 Broadway Penthouse, <br /> York, NY 10012, USA
-                </div>
-
-                <div class="footer__contact-email">
-                    info@thebeesknees.com
-                </div>
-            </div>
-
-            <div class="footer__contact">
-                <div class="footer__contact-name">
-                    Pearl Gregg <br /> Limitless Artist Group </div>
-
-                <div class="footer__contact-address">
-                    Booking Agent for <br /> USA / South America / Japan
-                </div>
-
-                <div class="footer__contact-email">
-                    pearl.gregg@limitlessag.com
-                </div>
-            </div>
-
-            <div class="footer__contact">
-                <div class="footer__contact-name">
-                    Carson Whyte <br /> ARCH Entertainment </div>
-
-                <div class="footer__contact-address">
-                    Booking Agent for <br /> UK / EU / AU
-                </div>
-
-                <div class="footer__contact-email">
-                    cwhyte@archentertainment.com
-                </div>
-            </div>
-
-        </section>
-
-        <img class="footer__logo" src="Assets/Logo/Logo-bandsite.svg"></img>
-
-        <div class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved
+      <section class="footer__socialmedia">
+        <h3>Get in Touch</h3>
+        <div class="footer__socialmedia-icons">
+          <img src="Assets/Icons/SVG/Icon-instagram.svg" />
+          <img src="Assets/Icons/SVG/Icon-facebook.svg" />
+          <img src="Assets/Icons/SVG/Icon-twitter.svg" />
         </div>
+        <div class="footer__socialmedia-logo">
+          <img src="Assets/Logo/Logo-bandsite.svg" />
+        </div>
+      </section>
+
+      <section class="footer__contacts">
+        <div class="footer__contact">
+          <div class="footer__contact-name">
+            Cam Adams <br />
+            The Bees Knees Management
+          </div>
+
+          <div class="footer__contact-address">
+            503 Broadway Penthouse, <br />
+            York, NY 10012, USA
+          </div>
+
+          <div class="footer__contact-email">info@thebeesknees.com</div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-name">
+            Pearl Gregg <br />
+            Limitless Artist Group
+          </div>
+
+          <div class="footer__contact-address">
+            Booking Agent for <br />
+            USA / South America / Japan
+          </div>
+
+          <div class="footer__contact-email">pearl.gregg@limitlessag.com</div>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__contact-name">
+            Carson Whyte <br />
+            ARCH Entertainment
+          </div>
+
+          <div class="footer__contact-address">
+            Booking Agent for <br />
+            UK / EU / AU
+          </div>
+
+          <div class="footer__contact-email">cwhyte@archentertainment.com</div>
+        </div>
+      </section>
+
+      <img class="footer__logo" src="Assets/Logo/Logo-bandsite.svg" />
+
+      <div class="footer__copyright">
+        Copyright The Bees Knees © 2021 All Rights Reserved
+      </div>
     </footer>
 
-
     <script type="module" src="Scripts/index-page.js"></script>
-
-</body>
-
+  </body>
 </html>

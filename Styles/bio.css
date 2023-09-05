@@ -246,8 +246,8 @@ body {
 .comment__subheading {
   font-weight: 500;
   font-size: 11px;
-  color: #AFAFAF;
-  padding-bottom: 0.5EM;
+  color: #afafaf;
+  padding-bottom: 0.5em;
 }
 .comment__area {
   gap: 24px;
@@ -297,14 +297,14 @@ body {
   gap: 24px;
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #E1E1E1;
-  border-top: 1px solid #E1E1E1;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
 }
 
 .comment__item-photo {
   width: 3rem;
   height: 3rem;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
   border-radius: 50%;
 }
 
@@ -327,7 +327,7 @@ body {
 
 .gallery {
   width: 100%;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 16px;
 }
 @media (min-width: 1200px) {

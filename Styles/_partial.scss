@@ -1,0 +1,21 @@
+$BandSite-Black: #323232;
+$font-stack: Avenir Next, san-serif;
+$Mercury: #e1e1e1;
+$Alabaster: #fafafa;
+$Silver: #afafaf;
+@mixin font-style($weight, $size) {
+  font-weight: $weight;
+  font-size: $size;
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

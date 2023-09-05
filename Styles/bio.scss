@@ -1,25 +1,4 @@
-$BandSite-Black: #323232;
-$font-stack: Avenir Next, san-serif;
-$Mercury: #E1E1E1;
-$Alabaster: #FAFAFA;
-$Silver: #AFAFAF;
-
-@mixin font-style ($weight, $size) {
-  font-weight: $weight;
-  font-size: $size;
-}
-
-@mixin tablet {
-  @media (min-width: 768px) {
-    @content
-  }
-}
-
-@mixin desktop {
-  @media (min-width: 1200px) {
-    @content
-  }
-}
+@import "partial";
 
 body {
   width: 100vw;
@@ -65,7 +44,6 @@ body {
       padding-right: 80px;
     }
 
-
     img {
       width: 30%;
 
@@ -73,8 +51,6 @@ body {
         width: 100%;
       }
     }
-
-
   }
 
   &__menu {
@@ -111,16 +87,12 @@ body {
         width: 10%;
       }
 
-
       &-underline {
         border-bottom: 2px solid white !important;
-
       }
-
 
       color: white;
       text-decoration: none;
-
     }
   }
 }
@@ -151,7 +123,6 @@ body {
     @include tablet {
       @include font-style(700, 60px);
     }
-
   }
 }
 
@@ -166,7 +137,6 @@ body {
   @include desktop {
     padding: 36px 80px;
   }
-
 
   &__heading {
     margin-top: 0;
@@ -242,7 +212,6 @@ body {
       }
     }
   }
-
 }
 
 .comment {
@@ -263,9 +232,8 @@ body {
   &__subheading {
     @include font-style(500, 11px);
     color: $Silver;
-    padding-bottom: 0.5EM;
+    padding-bottom: 0.5em;
   }
-
 
   &__area {
     gap: 24px;
@@ -288,7 +256,6 @@ body {
       width: 100%;
       height: 8rem;
     }
-
   }
 
   &__button {
@@ -304,12 +271,7 @@ body {
       object-fit: cover;
       border-radius: 50%;
     }
-
   }
-
-
-
-
 }
 
 .comment__posts {
@@ -323,7 +285,6 @@ body {
   height: 32px;
 }
 
-
 .comment__item {
   display: flex;
   width: 100%;
@@ -332,7 +293,6 @@ body {
   padding-bottom: 24px;
   border-bottom: 1px solid $Mercury;
   border-top: 1px solid $Mercury;
-
 }
 
 .comment__item-photo {
@@ -358,8 +318,6 @@ body {
 .comment__item-content {
   padding-top: 8px;
 }
-
-
 
 .gallery {
   width: 100%;
@@ -398,9 +356,7 @@ body {
       }
     }
   }
-
 }
-
 
 .footer {
   background-color: $BandSite-Black;
@@ -423,8 +379,6 @@ body {
       padding-left: 80px;
       gap: 80px;
     }
-
-
   }
 
   &__copyright {
@@ -443,7 +397,6 @@ body {
       padding-left: 80px;
     }
   }
-
 
   &__contact {
     display: flex;
@@ -498,7 +451,6 @@ body {
 
     @include desktop {
       padding-left: 80px;
-
     }
 
     h3 {
@@ -527,8 +479,5 @@ body {
     @include tablet {
       display: none;
     }
-
-
   }
-
 }
